@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: #F4F3F3;
+    font-family: '__Poppins_dd2ae8', '__Poppins_Fallback_dd2ae8' !important;
+}
+
+.success {
+    background: #4cd964 !important;
+}
+
+.warning {
+    background: #d9a84c !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgb(210, 239, 225) 0%, rgba(255, 245, 225, 0.37) 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #60b24c81;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffb92c74;
+}

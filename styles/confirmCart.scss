@@ -1,0 +1,79 @@
+@import "variables";
+
+.confirmCartModal {
+
+  .close-btn {
+    color: red;
+    top: -2rem;
+    right: 0;
+    position: absolute;
+  }
+
+  .close-btn:hover {
+    cursor: pointer;
+  }
+
+  .package-img {
+    width: 60% !important;
+    height: 100px !important;
+    object-fit: contain;
+    padding-right: .75rem !important;;
+  }
+
+  .amount-label {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .btn-continue-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    height: 42px;
+  }
+
+  .btn-continue-order:hover {
+    border: none;
+    background-color: #005b29 !important;
+    color: #fff !important;
+  }
+
+  .total-label {
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .total-label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .prod-name-confirm {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  .prod-qty-unit-price {
+    font-weight: 500;
+    color: #4f4f4f;
+    font-size: .8rem;
+    text-transform: capitalize;
+  }
+
+  .modal-topic-label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,122 @@
+@import "variables";
+.prod-sizes {
+  margin-top: 0.5rem;
+
+  .ant-radio-button-wrapper {
+    color: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+
+  .ant-radio-button-wrapper-checked {
+    color: $primary-color !important;
+    background-color: #7FDEAAFF !important;
+  }
+
+
+}
+
+
+.addonModal {
+  .product-img {
+    width: 100% !important;
+    height: 150px;
+    object-fit: contain;
+    //border: #d7d7d7 1px solid;
+    border-radius: 10px;
+    box-shadow: $main-shadow;
+  }
+
+  .addToPackage-btn {
+    background-color: $primary-color;
+    border: none;
+    color: white;
+  }
+
+  .addToPackage-btn:hover {
+
+    background-color: rgb(2, 126, 57) !important;
+    color: white !important;
+    border-color: $primary-color !important;
+  }
+
+  .product-content-wrapper {
+    padding-left: 1.5rem;
+
+    .prod-name {
+      color: $primary-color
+    }
+
+    .priceDetails {
+      display: flex;
+      margin-top: 0;
+
+      .real-price {
+        color: rgba(18, 18, 18, 0.7490196078);
+        font-size: 1.1rem;
+        font-weight: 300 !important;
+        text-decoration: line-through;
+      }
+
+      .discountedPrice {
+        padding-left: 0.7rem;
+        color: #1c1c1c;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: 500 !important;
+      }
+
+    }
+
+    .radio-btn-addOn {
+      border-radius: 8px !important;
+    }
+
+    .ant-divider-horizontal {
+      margin: 8px 0;
+    }
+
+
+    .button-wrapper {
+      justify-content: space-between;
+
+      button {
+        width: 35px;
+        height: 35px !important;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      button:hover {
+        border: $primary-color 1px solid;
+        color: $primary-color
+      }
+
+      input {
+        width: 40px !important;
+        height: 35px !important;
+        background-color: white !important;
+        color: #000 !important;
+      }
+
+      input:hover {
+        border: $primary-color 1px solid;
+      }
+    }
+
+    .total-price-wrapper {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: end;
+      text-align: end;
+
+      .total-amount-label {
+
+        margin-top: -10px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}

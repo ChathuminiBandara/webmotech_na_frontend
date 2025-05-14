@@ -1,0 +1,184 @@
+// SCSS file (NavBar.scss)
+
+@import "variables";
+
+#signup_btn {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.auth-btn {
+  height: 40px !important;
+}
+
+.logout {
+  padding: .5rem .5rem;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: rgba(54, 172, 44, 0.1);
+  color: $primary-color;
+}
+
+$nav-item-color: rgb(30, 150, 0);
+
+.ant-menu-title-content {
+  transition: red 0.3s !important;
+}
+
+.ant-menu-item-active {
+  color: $nav-item-color !important;
+}
+
+.ant-menu-item:hover::after,
+.ant-menu-item-selected::after,
+.ant-menu-submenu:hover::after,
+.ant-menu-submenu-selected::after {
+  border-bottom-color: $nav-item-color !important;
+}
+
+
+.ant-menu-item-selected {
+  background-color: transparent !important;
+  color: $nav-item-color !important;
+  font-weight: bold;
+}
+
+#nav_bar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  background: rgba(96, 178, 76, 0.274);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+
+  #navbar_logo {
+    img {
+      object-fit: contain;
+    }
+
+    margin: 0 0 0 5rem;
+  }
+
+  #navbar_items {
+    ul {
+      border: none;
+      background-color: transparent;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  #navbar_btn_div {
+    margin: 0 5rem 0 0;
+
+
+    #toggle_menuBtn {
+      border: 2px solid $secondary-color;
+      color: $secondary-color;
+      height: auto;
+      display: none;
+    }
+  }
+}
+
+#responsive_navbar {
+  margin: 68px 0 0 0;
+  display: none;
+  text-align: center;
+  position: absolute;
+  z-index: 99999999999999;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.81);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40.4px) !important;
+  -webkit-backdrop-filter: blur(43.4px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.54);
+
+  li {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #nav_bar {
+    #navbar_logo {
+      margin: 0;
+    }
+
+    #navbar_btn_div {
+      margin: 0 2rem 0 0;
+    }
+
+    #navbar_items {
+      ul {
+        li {
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 920px) {
+  #nav_bar {
+    #navbar_items {
+      #navbar01 {
+        display: none;
+      }
+    }
+
+    #navbar_btn_div {
+      #signup_btn {
+        display: block;
+      }
+
+      #toggle_menuBtn {
+        display: block;
+      }
+    }
+  }
+
+  #responsive_navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 426px) {
+  #nav_bar {
+    #navbar_logo {
+      margin: 0;
+
+      img {
+        width: 120px;
+        height: 60px;
+      }
+    }
+
+    #navbar_btn_div {
+      margin: 0 1rem 0 0;
+
+      .userIcon-btn {
+        margin-right: 10px;
+      }
+
+      .auth-btn {
+        height: 40px !important;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}

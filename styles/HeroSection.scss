@@ -1,0 +1,436 @@
+@import "variables";
+
+#hero_sec_div {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+    180deg,
+    rgb(210, 239, 225) 0%,
+    rgba(255, 245, 225, 0.37) 100%,
+    #f4f3f3
+  );
+
+  #hero_sec_div_bg {
+    background-image: url("../public/assets/HeroSecBg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 40px;
+
+    .hero_sec_cnt_div {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 300px;
+      text-align: center;
+
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        color: #60b24c;
+        width: 55%;
+        margin: 5px;
+        line-height: 5rem;
+      }
+
+      h5 {
+        font-size: 16px;
+        color: #838383;
+        font-weight: 500;
+        margin: 5px;
+        width: 38%;
+      }
+    }
+
+    #image_div {
+      height: 70%;
+      width: 100%;
+      //background-color: rgba(240, 128, 128, 0.342);
+      position: relative;
+      bottom: 150px;
+
+      #hero_sec_phone_img {
+        background-image: url("../public/assets/heroSecMobile.png");
+        background-position: center;
+        background-size: cover;
+        //background-color: rgb(179, 119, 42);
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        top: 8rem;
+        z-index: 9;
+      }
+
+      #hero_sec_arrow_img {
+        background-image: url("../public/assets/heroSecArrow.png");
+        background-position: center;
+        background-size: cover;
+        //background-color: antiquewhite;
+        width: 92%;
+        height: 340px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+      }
+
+      #hero_sec_veggebag_img {
+        background-image: url("../public/assets/heroSecVeggeBag.png");
+        background-position: center;
+        background-size: cover;
+        //background-color: beige;
+        height: 510px;
+        width: 410px;
+        position: absolute;
+        right: 0;
+        top: 5rem;
+        z-index: 9;
+      }
+    }
+  }
+}
+@media (max-width: 1750px) {
+  #hero_sec_div {
+    #hero_sec_div_bg {
+      #image_div {
+        #hero_sec_arrow_img {
+          width: 93%;
+          height: 300px;
+          top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1580px) {
+  #hero_sec_div {
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        top: 260px;
+
+        h1 {
+          font-size: 70px;
+        }
+
+        h5 {
+          width: 48%;
+        }
+      }
+
+      #image_div {
+        bottom: 180px;
+
+        #hero_sec_arrow_img {
+          width: 91%;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1382px) {
+  #hero_sec_div {
+    height: 700px;
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        h1 {
+          font-size: 68px;
+        }
+        h5 {
+          width: 50%;
+        }
+      }
+      #image_div {
+        #hero_sec_phone_img {
+          height: 420px;
+          width: 320px;
+        }
+
+        #hero_sec_arrow_img {
+          width: 93%;
+          height: 230px;
+          top: 25px;
+        }
+
+        #hero_sec_veggebag_img {
+          height: 410px;
+          width: 310px;
+          top: 6rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1343px) {
+  #hero_sec_div {
+    #hero_sec_div_bg {
+      #image_div {
+        bottom: 250px;
+        #hero_sec_phone_img {
+          height: 400px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1311px) {
+  #hero_sec_div {
+    #hero_sec_div_bg {
+      #image_div {
+        #hero_sec_arrow_img {
+          width: 93%;
+          height: 220px;
+          top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1221px) {
+  #hero_sec_div {
+    #hero_sec_div_bg {
+      #image_div {
+        #hero_sec_arrow_img {
+          width: 93%;
+          height: 200px;
+          top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  #hero_sec_div {
+    height: 700px;
+
+    #hero_sec_div_bg {
+      top: -40px;
+
+      .hero_sec_cnt_div {
+        h1 {
+          font-size: 65px;
+          width: 70%;
+        }
+
+        h5 {
+          width: 55%;
+        }
+      }
+
+      #image_div {
+        height: 80%;
+        width: 100%;
+        // background-color: rgba(240, 128, 128, 0.342);
+        bottom: 100px;
+
+        #hero_sec_phone_img {
+          // background-color: rgb(179, 119, 42);
+          height: 330px;
+          width: 250px;
+          top: 13rem;
+        }
+
+        #hero_sec_arrow_img {
+          // background-color: antiquewhite;
+          width: 94%;
+          height: 180px;
+          top: 6%;
+          right: 0;
+          left: 3rem;
+          transform: rotate(-10deg);
+        }
+
+        #hero_sec_veggebag_img {
+          // background-color: beige;
+          height: 360px;
+          width: 260px;
+          top: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1008px) {
+  #hero_sec_div {
+    height: 700px;
+
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        top: 220px;
+
+        h1 {
+          font-size: 60px;
+        }
+      }
+
+      #image_div {
+        height: 75%;
+
+        #hero_sec_arrow_img {
+          background-image: url("../public/assets/heroSecArrowResponsive.png");
+          background-position: center;
+          background-size: cover;
+          //background-color: antiquewhite;
+          top: auto;
+          bottom: 70px;
+          right: 0;
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  #hero_sec_div {
+    height: 700px;
+
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        top: 220px;
+
+        h1 {
+          font-size: 55px;
+          width: 80%;
+        }
+
+        h5 {
+          font-size: 15px;
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 746px) {
+  #hero_sec_div {
+    height: 700px;
+
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        top: 210px;
+
+        h1 {
+          font-size: 55px;
+          width: 100%;
+        }
+      }
+
+      #image_div {
+        #hero_sec_phone_img {
+          height: 280px;
+          width: 220px;
+          top: 14rem;
+        }
+
+        #hero_sec_arrow_img {
+          width: 90%;
+          height: 130px;
+          bottom: 100px;
+        }
+
+        #hero_sec_veggebag_img {
+          height: 320px;
+          width: 220px;
+          top: 12rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 597px) {
+  #hero_sec_div {
+    height: 680px;
+
+    #hero_sec_div_bg {
+      top: -80px;
+
+      .hero_sec_cnt_div {
+        top: 210px;
+
+        h1 {
+          font-size: 45px;
+          width: 95%;
+          line-height: 4rem;
+        }
+      }
+
+      #image_div {
+        bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 446px) {
+  #hero_sec_div {
+    height: 720px;
+
+    #hero_sec_div_bg {
+      top: -80px;
+
+      .hero_sec_cnt_div {
+        top: 190px;
+
+        h1 {
+          font-size: 45px;
+          width: 95%;
+          line-height: 3.5rem;
+        }
+
+        h5 {
+          width: 60%;
+        }
+      }
+
+      #image_div {
+        #hero_sec_phone_img {
+          height: 200px;
+          width: 160px;
+          top: 16rem;
+        }
+
+        #hero_sec_arrow_img {
+          bottom: 150px;
+          width: 80%;
+          height: 100px;
+        }
+
+        #hero_sec_veggebag_img {
+          height: 280px;
+          width: 180px;
+          top: 15rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  #hero_sec_div {
+    height: 760px;
+
+    #hero_sec_div_bg {
+      .hero_sec_cnt_div {
+        h1 {
+          font-size: 42px;
+          width: 85%;
+          line-height: 3.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+
+.btn-confirm-location {
+  margin-top: 10px;
+  border: 1px solid #60B24C !important;
+  color: #60B24C;
+
+}
+
+.ipt-location {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-input:hover {
+  border: 1px solid #60B24C !important;
+
+}
+
+.ant-input:focus {
+  border: 1px solid #60B24C !important;
+
+}
+
+.gmnoprint,
+.gm-control-active {
+  display: none !important;
+}
+
+.btn-confirm-location:hover {
+  background-color: #60B24C !important;
+  color: white !important;
+}

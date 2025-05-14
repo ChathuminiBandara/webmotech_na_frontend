@@ -1,0 +1,17 @@
+@import "variables";
+
+
+.my-orders {
+  padding: 7rem 0 6rem 0;
+  background: linear-gradient(
+                  180deg,
+                  rgb(210, 239, 225) 0%,
+                  rgba(255, 245, 225, 0.37) 100%, #F4F3F3
+  );
+  min-height: 90vh !important;
+
+  .view-btn {
+    background-color: $primary-color !important;
+    color: #fff !important;
+  }
+}

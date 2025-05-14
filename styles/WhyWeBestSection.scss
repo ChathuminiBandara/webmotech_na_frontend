@@ -1,0 +1,389 @@
+@import "variables";
+
+#why_we_best_sec {
+  height: auto;
+  width: 100%;
+  margin: 5rem 0 2rem 0;
+
+  #wwb_sec_heading_col {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-weight: 500;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      color: #838383;
+      margin: 10px 0;
+      width: 40%;
+    }
+  }
+
+  #wwb_sec_cnt_col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .wwb_cnt_cards {
+      width: 320px;
+      height: 150px;
+      background-color: rgb(247, 245, 241);
+      border-radius: 20px;
+      border: 1px solid $primary-bg-color;
+      position: absolute;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+      .wwb_cnt_card_icon {
+        font-size: 38px;
+        color: #92bd69;
+
+        svg {
+          margin: 15px;
+        }
+      }
+
+      .wwb_cnt_card_des {
+        padding: 8px 4px;
+
+        h3 {
+          font-size: 28px;
+          font-weight: 500;
+          margin: 0;
+          color: #36ac2c;
+        }
+
+        h5 {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 0 0 2px 0;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          margin: 0;
+          color: #838383;
+        }
+      }
+    }
+
+    #wwb_sec_cnt_card_01 {
+      top: 2rem;
+      left: 18rem;
+    }
+
+    #wwb_sec_cnt_card_02 {
+      top: 5rem;
+      right: 12rem;
+    }
+
+    #wwb_sec_cnt_card_03 {
+      bottom: 6rem;
+      left: 12rem;
+    }
+
+    #wwb_sec_cnt_card_04 {
+      bottom: 3rem;
+      right: 18rem;
+    }
+  }
+
+  #wwb_sec_lable_col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .wwb_lables_col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .wwb_cnt_lables {
+        height: auto;
+        width: auto;
+        background-color: $primary-bg-color;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        border-radius: 5px;
+
+        .wwb_lables_img_div {
+          padding: 2rem 0;
+
+          img {
+            margin: 0 20px;
+          }
+        }
+
+        .wwb_lables_des_div {
+          padding: 2rem 0;
+
+          h3 {
+            color: #4b4b4b;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 5px 5px 0 10px;
+          }
+
+          p {
+            color: #adadad;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 5px 5px 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  #why_we_best_sec {
+    #wwb_sec_cnt_col {
+      #wwb_sec_cnt_card_01 {
+        top: 2rem;
+        left: 14rem;
+      }
+
+      #wwb_sec_cnt_card_02 {
+        top: 5rem;
+        right: 8rem;
+      }
+
+      #wwb_sec_cnt_card_03 {
+        bottom: 6rem;
+        left: 8rem;
+      }
+
+      #wwb_sec_cnt_card_04 {
+        bottom: 3rem;
+        right: 14rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1445px) {
+  #why_we_best_sec {
+    #wwb_sec_cnt_col {
+      .wwb_cnt_cards {
+        width: 225px;
+        height: 120px;
+        .wwb_cnt_card_icon {
+          font-size: 28px;
+        }
+        .wwb_cnt_card_des {
+          h3 {
+            font-size: 25px;
+          }
+          h5 {
+            font-size: 13px;
+          }
+          p {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1225px) {
+  #why_we_best_sec {
+    display: flex;
+    justify-content: center;
+
+    #wwb_sec_cnt_col {
+      #wwb_sec_img {
+        width: 400px;
+        height: auto;
+      }
+
+      #wwb_sec_cnt_card_01 {
+        left: 4rem;
+      }
+
+      #wwb_sec_cnt_card_02 {
+        right: 4rem;
+      }
+
+      #wwb_sec_cnt_card_03 {
+        left: 6rem;
+      }
+
+      #wwb_sec_cnt_card_04 {
+        right: 6rem;
+      }
+    }
+
+    #wwb_sec_lable_col {
+      width: 90%;
+
+      .wwb_lables_col {
+        .wwb_cnt_lables {
+          height: auto;
+          width: auto;
+          margin: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #why_we_best_sec {
+    #wwb_sec_heading_col {
+      p {
+        width: 90%;
+      }
+    }
+
+    #wwb_sec_cnt_col {
+      padding: 13rem 0;
+
+      #wwb_sec_img {
+        width: 300px;
+      }
+
+      #wwb_sec_cnt_card_01 {
+        top: 3rem;
+        left: 20%;
+      }
+
+      #wwb_sec_cnt_card_02 {
+        top: 6rem;
+        right: 20%;
+      }
+
+      #wwb_sec_cnt_card_03 {
+        bottom: 6rem;
+        left: 20%;
+      }
+
+      #wwb_sec_cnt_card_04 {
+        bottom: 3rem;
+        right: 20%;
+      }
+    }
+
+    #wwb_sec_lable_col {
+      .wwb_lables_col {
+        .wwb_cnt_lables {
+          width: 50%;
+
+          .wwb_lables_img_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .wwb_lables_des_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  #why_we_best_sec {
+    #wwb_sec_cnt_col {
+      #wwb_sec_img {
+        width: 300px;
+      }
+
+      #wwb_sec_cnt_card_01 {
+        top: 3rem;
+        left: 10%;
+      }
+
+      #wwb_sec_cnt_card_02 {
+        top: 6rem;
+        right: 10%;
+      }
+
+      #wwb_sec_cnt_card_03 {
+
+        bottom: 6rem;
+        left: 10%;
+      }
+
+      #wwb_sec_cnt_card_04 {
+        bottom: 3rem;
+        right: 10%;
+      }
+    }
+
+    #wwb_sec_lable_col {
+      .wwb_lables_col {
+        .wwb_cnt_lables {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  #why_we_best_sec {
+    #wwb_sec_cnt_col {
+      padding: 20rem 0;
+
+      #wwb_sec_img {
+        width: 300px;
+      }
+
+      #wwb_sec_cnt_card_01 {
+        top: 3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      #wwb_sec_cnt_card_02 {
+        top: 12rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      #wwb_sec_cnt_card_03 {
+        bottom: 12rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      #wwb_sec_cnt_card_04 {
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #why_we_best_sec {
+    #wwb_sec_cnt_col {
+      #wwb_sec_img {
+        width: 260px;
+      }
+    }
+  }
+}

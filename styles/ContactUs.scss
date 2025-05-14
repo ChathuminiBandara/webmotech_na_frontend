@@ -1,0 +1,66 @@
+@import "variables";
+
+.ant-modal-content {
+  padding: 0 !important;
+  .ant-modal-header {
+    border-top: 10px solid $primary-color;
+    .ant-modal-title {
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      margin: 30px 0 0 0;
+      margin-bottom: 0;
+    }
+  }
+  .ant-modal-body {
+    padding: 0 50px 50px 50px !important;
+    p {
+      text-align: center;
+      margin: 0 0 35px 0;
+      font-size: 16px;
+    }
+    #contact_form {
+      border-radius: 6px;
+      border: 1px solid #e1e1e6;
+      padding: 20px;
+      .ant-form-item {
+        margin-bottom: 5px;
+      }
+      label {
+        font-weight: 700;
+      }
+      textarea {
+        font-size: 16px;
+      }
+      button {
+        width: 100%;
+        background-color: $primary-color;
+        color: white;
+        height: 46px;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ant-modal-content {
+    .ant-modal-body {
+      #contact_form {
+        .ant-form-item {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0 30px 30px 30px !important;
+    }
+  }
+}

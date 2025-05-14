@@ -1,0 +1,96 @@
+@import "variables";
+
+.cartRow {
+
+  .ant-btn-dangerous:hover {
+    color: #ff4d4f !important;
+    border-color: #ff4d4f !important;
+  }
+
+  .add-on-card {
+
+    margin: 2px !important;
+    padding: 2px !important;
+
+    .ant-card-body {
+      padding: 4px !important;
+    }
+  }
+
+
+  .card-package-img {
+    width: 100% !important;
+    height: 80px;
+    object-fit: contain;
+  }
+
+
+  .amount-label {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .close-btn {
+    color: red;
+    top: -2rem;
+    right: 0;
+    position: absolute;
+  }
+
+  .close-btn:hover {
+    cursor: pointer;
+  }
+
+  .total-label {
+    color: $primary-color;
+    margin-bottom: 0 !important;
+  }
+
+
+  .prod-name-confirm {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  .prod-qty-unit-price {
+    font-weight: 500;
+    color: #4f4f4f;
+    font-size: .8rem;
+    text-transform: capitalize;
+  }
+
+  .card-prod-qty-unit-price {
+    width: 100%;
+    font-weight: 500;
+    color: #4f4f4f;
+    font-size: .8rem;
+    text-align: center !important;
+    margin: 2px 0;
+    text-transform: capitalize;
+  }
+
+  .card-name-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 2px 0;
+    text-transform: capitalize;
+  }
+
+  .card-total-label {
+    width: 100%;
+    font-weight: 500;
+    color: $primary-color;
+    font-size: 1rem;
+    text-align: center !important;
+    margin: 2px 0;
+    text-transform: capitalize;
+  }
+
+  .modal-topic-label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: .2rem;
+    color: $primary-color;
+  }
+}

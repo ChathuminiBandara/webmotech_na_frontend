@@ -1,0 +1,101 @@
+@import "variables";
+
+.addonCard {
+  margin: 10px;
+
+
+  .ant-card {
+    border-radius: 0 20px 0 20px !important;
+    @media (max-width: 768px) {
+      padding: 5px;
+    }
+  }
+
+  .ant-card-body {
+    padding: 10px !important;
+  }
+
+  .img-wrapper {
+    img {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100% !important;
+    }
+  }
+
+  .category-name {
+    margin-top: 5px;
+    color: #868686;
+  }
+
+  .prod-name {
+    margin-top: -4px;
+    font-weight: 500;
+    font-size: .8rem;
+  }
+
+  .price {
+    margin-top: -4px;
+    font-weight: 500;
+    font-size: .8rem;
+    color: $primary-color;
+
+    .arrow-icon {
+      transform: rotateZ(270deg);
+    }
+  }
+
+  .discount-badge-wrapper {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9;
+
+    .discount-badge {
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      z-index: 999;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+      top: 18px;
+      left: 25px;
+      flex-direction: column;
+    }
+  }
+
+
+  .addon-btn {
+    margin-top: 10px;
+    background-color: $primary-color;
+    color: white;
+    border-color: $primary-color
+  }
+
+  .addon-btn:hover {
+    margin-top: 10px;
+    background-color: rgb(2, 126, 57) !important;
+    color: white !important;
+    border-color: $primary-color !important;
+  }
+}
+
+.changePaymentType {
+
+  .retry-btn {
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+
+  }
+
+  .retry-btn:hover {
+    border-color: #025e2b !important;
+    color: #025e2b !important;
+
+  }
+
+}

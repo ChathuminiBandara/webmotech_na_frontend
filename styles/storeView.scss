@@ -1,0 +1,169 @@
+@import "variables";
+
+.ant-tour-cover {
+  position: absolute !important;
+  right: -1.5rem !important;
+  top: -15.35rem !important;
+  //transform: scaleX(-1);
+}
+
+input:hover {
+  border-color: $primary-color !important;
+
+}
+
+input:focus {
+  border-color: $primary-color !important;
+
+}
+
+.ant-checkbox:hover {
+  border-color: $primary-color !important;
+
+}
+
+.filter-apply-btn {
+  background-color: $primary-color !important;
+  color: #fff !important;
+}
+
+.filter-apply-btn:hover {
+  border-color: $primary-color !important;
+  color: $primary-color !important;
+  background-color: #fff !important;
+}
+
+.ant-slider .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px #5cb919 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #5cb919 !important;
+  border-color: #5cb919 !important;
+}
+
+.ant-checkbox .ant-checkbox-inner :hover {
+  border-color: #5cb919 !important;
+}
+
+.ant-checkbox:hover {
+  border-color: #5cb919 !important;
+}
+
+.filter-title {
+  font-size: 20px;
+}
+
+.checkbox-group-vertical {
+  padding: 1rem 0;
+}
+
+.checkbox-group-vertical .ant-checkbox-wrapper {
+  margin: 0.4rem 0;
+}
+
+.itemActiveBg {
+  background-color: #ff2d55 !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: #5cb919 !important;
+  color: #5cb919 !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+
+  color: #5cb919 !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.filterShore {
+  padding: 7rem 0rem 6rem 0;
+
+  .filter-wrapper {
+    display: block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .typeSection {
+    cursor: pointer;
+    width: 96%;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+
+    .ant-avatar {
+      border: solid 2px white !important;
+      margin-right: 10px;
+    }
+  }
+
+  .selectedType {
+    background-color: rgb(92, 185, 25);
+
+    span {
+      color: white !important;
+      font-weight: 400;
+    }
+  }
+
+  .unselectedType {
+    background-color: rgba(92, 185, 25, 0.16);
+
+  }
+
+  .left-border {
+    border-left: 1px solid rgba(138, 138, 138, 0.45);
+
+    .knife-icon {
+      transform: rotateZ(90deg);
+    }
+
+    .ant-tabs-tab:hover {
+      color: #044f25 !important;
+
+    }
+
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        color: $primary-color !important;
+      }
+    }
+
+    .filter-btn {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+
+
+  }
+
+  .card {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 0.5rem;
+  }
+
+  .filter-title {
+    font-weight: 500;
+    color: #4f4f4f;
+    font-size: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+  }
+
+  .filter-methods {
+
+    margin-bottom: 2rem;
+  }
+}

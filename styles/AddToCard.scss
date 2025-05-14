@@ -1,0 +1,104 @@
+@import "variables";
+
+.ant-modal-title {
+  h1 {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+}
+
+.qty-section {
+  margin : 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-addToCart {
+  color: white !important;
+  background-color: $primary-color !important;
+  height: 42px !important;
+  width: auto;
+
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.number-input-qty {
+  .qty-wrapper {
+    align-items: center;
+
+    .numberInput {
+      width: 80px !important;
+      text-align: center !important;
+      height: 40px;
+      border-radius: 0 !important;
+    }
+
+    .inc-btn {
+      border-radius: 0 5px 5px 0 !important;
+    }
+
+    .dec-btn {
+      border-radius: 5px 0 0 5px !important;
+    }
+
+    button {
+      width: 40px !important;
+      height: 40px;
+    }
+  }
+}
+
+.img-wrappaer {
+  position: relative;
+
+  .family_pack_img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  discount-badge-wrapper {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    z-index: 99;
+
+    .discount-badge {
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      z-index: 999;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+      top: 25px;
+      left: 35px;
+      flex-direction: column;
+    }
+  }
+
+
+}
+
+
+.packageDetails {
+  margin-top: 1.5rem;
+
+  .prod-name {
+    margin-bottom: 0 !important;
+  }
+
+  span {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+
+

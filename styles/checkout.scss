@@ -1,0 +1,216 @@
+@import "variables";
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-select {
+  border-color: #ff2d55 !important;
+}
+
+.ant-select-focused:where(.css-dev-only-do-not-override-dkbvqv).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
+  border-bottom-color: $primary-color !important;
+  box-shadow: none !important;
+}
+
+.ant-select-focused {
+  box-shadow: none !important;
+}
+
+.ant-select-selection-placeholder {
+  font-size: 18px !important;
+  color: #212529 !important
+}
+
+.ant-select-selector {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+}
+
+.ant-select-selector:hover {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom-color: $primary-color !important;
+}
+
+.ant-select-selector:focus {
+  box-shadow: none !important;
+}
+
+.checkout {
+  background: rgb(255, 245, 225);
+  background: linear-gradient(352deg, rgba(255, 245, 225, .5) 0%, rgba(200, 255, 180, .5) 100%);
+  width: 100%;
+  padding-bottom: 2rem;
+
+
+  .checkout-container {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      padding-top: 3rem;
+    }
+
+    .checkout-card-wrapper {
+      background-color: rgba(255, 255, 255, 0.5) !important;
+      border: none !important;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 20px;
+      padding: 1rem;
+
+      .confirmDetails {
+        .user-confirm {
+          background-color: rgba(255, 255, 255, 0.5) !important;
+          border: none !important;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+          border-radius: 20px;
+          padding: 1rem;
+          margin: .5rem 0.5rem;
+
+          .underline-section {
+            border-top: 1px solid black;
+            border-bottom: 1px double black;
+          }
+
+          .subtopic-confirm {
+            color: $primary-color;
+          }
+
+          .sub-title-label {
+            color: rgba(63, 63, 63, 0.48);
+          }
+        }
+      }
+
+      .btn-checkout {
+        background-color: $primary-color;
+        color: white;
+        height: 46px;
+        border: none;
+        font-size: 16px
+      }
+
+      .btn-checkout:hover {
+        background-color: #027334;
+        color: white;
+
+      }
+
+      .topic-checkout {
+        color: $primary-color;
+        padding-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .checkout-bg-container {
+        position: relative;
+        background-image: url("../public/assets/checkout-bg.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        border-radius: 20px;
+        margin-left: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        @media (max-width: 425px) {
+          display: none !important;
+
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+
+        .bottom-section {
+          position: absolute;
+          bottom: 0;
+          padding: 1rem;
+          background-color: rgba(46, 94, 12, 0.81);
+          width: 100%;
+          border-radius: 0 0 20px 20px;
+          height: 13rem;
+
+
+          .bottom-wrapper {
+
+            color: white;
+            position: absolute;
+            bottom: 1rem;
+            padding-right: 1rem;
+
+            @media (max-width: 768px) {
+              h4 {
+                font-size: 18px !important;
+              }
+              p {
+                font-size: 11px !important;
+                line-height: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      input {
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important;
+        border-radius: 0 !important;
+        background-color: rgba(255, 255, 255, 0.21) !important;
+      }
+
+
+      input:focus {
+        transition: .5s ease-in-out;
+        border-color: #36ac2c !important;
+        box-shadow: none !important;
+        background-color: rgba(255, 255, 255, 0.21) !important;
+      }
+
+      .user-details {
+        margin-top: 1rem;
+      }
+
+      .address-wrapper {
+        margin-top: 3rem;
+      }
+
+      .date-wrapper {
+        margin-top: 3rem;
+
+        .ant-picker-outlined {
+          border-top: none !important;
+          border-right: none !important;
+          border-left: none !important;
+          border-radius: 0 !important;
+          background-color: rgba(255, 255, 255, 0.21) !important;
+        }
+
+        .ant-picker-outlined:focus-within {
+          border-color: #36ac2c !important;
+
+        }
+
+        .ant-picker-outlined:hover {
+          border-color: #36ac2c !important;
+
+        }
+      }
+    }
+  }
+
+
+}
